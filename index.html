@@ -37,6 +37,9 @@
             <div class="login">
                 <button type="button"><a href="login.html">Login/Signup</a></button>
             </div>
+            <div class="skype">
+                <button id="skypeButton" class="skype-btn">For Appointment</button>
+            </div>
         </div>
     </header>
 
@@ -330,6 +333,15 @@
             <p>&copy; 2024 Medical Tourism India</p>
         </div>
     </footer>
+
+    <script>
+          document.getElementById("skypeButton").addEventListener("click", function() {
+        const skypeLink = "https://join.skype.com/urnLbluWGkzI"; // Replace with actual Skype meeting link
+
+        // Open the Skype URL in a new tab
+        window.open(skypeLink, '_blank');
+        });
+    </script>
 
     <script src="script.js"></script>
 </body>
