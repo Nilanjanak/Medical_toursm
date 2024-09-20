@@ -102,6 +102,30 @@ nav ul li:hover ul.dropdown {
     background-color: #ddd;
 }
 
+
+.skype {
+  position: fixed;
+    bottom: 55px;  /* Distance from bottom */
+    right: 20px;   /* Distance from right */
+    z-index: 999;  /* Set z-index to 999 */
+}
+
+.skype-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  color: white;
+  background-color: #00aff0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  position: relative;
+}
+
+.skype-btn:hover {
+  background-color: #0078d7;
+}
+
 .carousel-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
@@ -170,6 +194,10 @@ nav ul li:hover ul.dropdown {
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     background-color: #232f3e;
     color: white;
     text-align: center;
