@@ -102,12 +102,11 @@ nav ul li:hover ul.dropdown {
     background-color: #ddd;
 }
 
-
 .skype {
   position: fixed;
-    bottom: 55px;  /* Distance from bottom */
-    right: 20px;   /* Distance from right */
-    z-index: 999;  /* Set z-index to 999 */
+  bottom: 60px;  /* Distance from bottom */
+  right: 20px;   /* Distance from right */
+  z-index: 999;
 }
 
 .skype-btn {
@@ -119,12 +118,29 @@ nav ul li:hover ul.dropdown {
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s;
-  position: relative;
+  animation: pulse 2s infinite; /* Apply continuous animation */
 }
 
 .skype-btn:hover {
   background-color: #0078d7;
 }
+
+/* Keyframes for continuous pulsing animation */
+@keyframes pulse {
+  0% {
+      transform: scale(1); /* Default size */
+      box-shadow: 0 0 10px rgba(0, 175, 240, 0.7);
+  }
+  50% {
+      transform: scale(1.1); /* Slightly larger */
+      box-shadow: 0 0 20px rgba(0, 175, 240, 1);
+  }
+  100% {
+      transform: scale(1); /* Back to default size */
+      box-shadow: 0 0 10px rgba(0, 175, 240, 0.7);
+  }
+}
+
 
 .carousel-container {
     display: flex;
